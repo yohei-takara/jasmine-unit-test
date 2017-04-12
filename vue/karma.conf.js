@@ -3,16 +3,16 @@
 
 module.exports = function(config) {
   config.set({
-    basePath: '../',
+    basePath: '',
     frameworks: ['jasmine'],
     files: [
-      "main/node_modules/vue/dist/vue.js",
-      "main/script/*.js",
-      "spec/*.js"
+      "node_modules/vue/dist/vue.js",
+      "src/script/*.js",
+      "test/unit/spec/*.js"
     ],
     exclude: [],
     preprocessors: {
-      'main/script/*.js': ['coverage']
+      'src/script/*.js': ['coverage']
     },
     reporters: ['spec', 'coverage'],
     port: 9876,

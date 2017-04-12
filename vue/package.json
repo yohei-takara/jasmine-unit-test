@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run deleteCoverage && npm run karma",
-    "karma": "karma start --single-run",
+    "karma": "karma start karma.conf.js --single-run",
     "deleteCoverage": "rm -rf coverage/",
     "clean": "rm -rf node_modules/ && npm cache clean && npm run deleteCoverage"
   },
