@@ -1,0 +1,33 @@
+{
+  "name": "jasmine-unit-test",
+  "version": "1.0.0",
+  "description": "jasmineを使ったフロントエンドのテストサンプルリポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run deleteCoverage && npm run karma",
+    "karma": "karma start karma.conf.js --single-run",
+    "deleteCoverage": "rm -rf coverage/",
+    "clean": "rm -rf node_modules/ && npm cache clean && npm run deleteCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohei-takara/jasmine-unit-test.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yohei-takara/jasmine-unit-test/issues"
+  },
+  "homepage": "https://github.com/yohei-takara/jasmine-unit-test#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "karma": "^1.6.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.31",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "dependencies": {
+    "vue": "^2.2.6"
+  }
+}
