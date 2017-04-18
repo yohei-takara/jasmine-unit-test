@@ -1,4 +1,4 @@
-describe('MyComponent', function() {
+describe('vue アプリのテスト', function() {
   it('has a created hook', function() {
     expect(typeof app.$data).toBe('object');
   });
