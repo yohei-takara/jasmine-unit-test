@@ -18,6 +18,6 @@ var app = new Vue({
 
 function multipl(a, b) {
 
-  var c = a * b;
+  var c = a * b * d;
   console.log(c);
 }
