@@ -7,9 +7,23 @@ var app = new Vue({
   methods: {
     greet: function (event) {
       this.name = "Vue!";
+      multipl(5, 9)
     },
     clrearGreet: function (event) {
       this.name = "";
     }
   }
 })
+
+
+function multipl(a, b) {
+
+  var c = a * b;
+  console.log(c);
+}
+
+function multipl(a, b) {
+
+  var c = a * b;
+  console.log(c);
+}
